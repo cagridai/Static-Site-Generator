@@ -107,3 +107,7 @@ def split_nodes_link(old_nodes):
             new_nodes.append(TextNode(old_node.text, text_type_text))
             
     return new_nodes
+
+
+def markdown_to_blocks(markdown):
+    return markdown.split("\n\n")
